@@ -6,8 +6,13 @@
 Задание: переписать код используя как минимум 1 функцию
 """
 
+
+def check_if_born_year_is_correct(born_year):
+    return born_year == '1799'
+
+
 year = input('Ввведите год рождения А.С.Пушкина:')
-while year != '1799':
+while not check_if_born_year_is_correct(year):
     print("Не верно")
     year = input('Ввведите год рождения А.С.Пушкина:')
 
